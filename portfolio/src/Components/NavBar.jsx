@@ -25,12 +25,10 @@ const NavBar = () => {
       <a href="https://www.linkedin.com/in/james-mbuvi-0442152b1/" className='flex items-center justify-center w-10 h-10'>
         <FaLinkedin className='w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 hover:text-teal-400' />
       </a>
-      <a href="" className='flex items-center justify-center w-10 h-10'>
-        <MdEmail className='w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 hover:text-teal-400' />
-      </a>
-      <a href="" className='flex items-center justify-center w-10 h-10'>
+      <Link to="/contact">
         <FaPhone className='w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 hover:text-teal-400' />
-      </a>
+    
+      </Link>
     </div>
   );
 }
