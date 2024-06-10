@@ -1,6 +1,17 @@
 import React from 'react';
-
-
+import movieAuthImage from '../assets/images/movieAuthentication.png';
+import movieDetailsImage from '../assets/images/moviedetails.png';
+import movieResultsImage from '../assets/images/movieresults.png';
+import Auth from '../assets/images/beautyshoplogin.png';
+import beard from '../assets/images/beard.pnj.png';
+import checkout from '../assets/images/checkout.png';
+import blogLogin from '../assets/images/adminlogin.png';
+import blogdetails from '../assets/images/blogapp.png';
+import search from '../assets/images/blogsearch.png';
+import meallogin from '../assets/images/mealplanlogin.png';
+import homepage from '../assets/images/mealhomepage.png';
+import recipe from '../assets/images/recipe.png';
+import getstarted from '../assets/images/getstarted.png';
 
 const Projects = () => {
   const projects = [
@@ -10,9 +21,9 @@ const Projects = () => {
       githubLink: "https://github.com/Ndisyamwende/Beauty-shop-frontend.git",
       demoLink: "https://chipper-flan-8b810f.netlify.app",
       images: [
-        "../assets/images/movieAuthentication.png",
-         "../assets/images/moviedetails.png",
-        // "./images/movie results.png",
+        Auth,
+        beard,
+        checkout,
       ],
       highlights: [
         "Secure Authentication: Implemented JWT for enhanced user data protection.",
@@ -27,9 +38,10 @@ const Projects = () => {
       githubLink: "https://github.com/james-mbuvi/meal-planner/tree/main/meal-planner",
       demoLink: "https://ndisyamwende.github.io/Mindful-meal-planner/",
       images: [
-        "path/to/meal-planner-image1.jpg",
-        "path/to/meal-planner-image2.jpg",
-        "path/to/meal-planner-image3.jpg",
+        meallogin,
+        homepage,
+        getstarted,
+        recipe,
       ],
       highlights: [
         "Secure Authentication: Configured Firebase authentication for user security.",
@@ -44,11 +56,9 @@ const Projects = () => {
       githubLink: "https://github.com/james-mbuvi/Admin-app-Front-end",
       demoLink: "https://mbuvis.vercel.app/",
       images: [
-        "path/to/admin-app-image1.jpg",
-        "path/to/admin-app-image2.jpg",
-        "./images/movie results.png",
-       
-      
+        blogLogin,
+        blogdetails,
+        search,
       ],
       highlights: [
         "Secure Access: Firebase authentication for secure user access.",
@@ -63,12 +73,9 @@ const Projects = () => {
       description: "A convenient application for users to search for information about movies.",
       githubLink: "https://github.com/james-mbuvi/Movie-search-application-react",
       images: [
-      
-        "./images/movie Authentication.png",
-        "./images/movie results.png",
-        "./images/movie details.png",
-
-        
+        movieAuthImage,
+        movieDetailsImage,
+        movieResultsImage,
       ],
       highlights: [
         "Search Functionality: Optimized search with debouncing for performance.",
@@ -92,7 +99,7 @@ const Projects = () => {
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
                 {project.images.map((image, idx) => (
-                  <img key={idx} src={image} alt={`${project.title} screenshot ${idx + 1}`} className="w-full h-48 object-cover rounded-lg"/>
+                  <img key={idx} src={image} alt={`${project.title} screenshot ${idx + 1}`} className="w-full h-48 object-contain rounded-lg"/>
                 ))}
               </div>
               <p className="mt-4 text-gray-300 text-lg md:text-xl">
@@ -118,7 +125,3 @@ const Projects = () => {
 }
 
 export default Projects;
-
-
-
-
