@@ -11,7 +11,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://james-mbuvi.github.io/portfolio/",
+  "homepage": "https://james-mbuvi.github.io/",
   "dependencies": {
     "glob": "^10.4.1",
     "inflight": "^1.0.6",
